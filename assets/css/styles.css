@@ -1,0 +1,254 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: auto;
+}
+.form-container {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  margin: 2rem auto;
+   
+}
+.form-container h2 {
+  margin-bottom: 1rem;
+}
+label {
+  display: block;
+  margin: 0.5rem 0 0.25rem;
+}
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+}
+button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.btn-submit {
+  background-color: #007bff;
+  color: white;
+}
+.btn-cancel {
+  background-color: #dc3545;
+  color: white;
+}
+.error-msg {
+  color: red;
+  font-size: 0.9em;
+  margin-top: -12px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+/* === NAVBAR & HEADER ===================================== */
+
+/* 1) Barra fija arriba */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #ffffff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+  z-index: 1000;
+}
+
+/* 2) Contenedor flex para alinear extremos */
+.navbar {
+  max-width: 1200px; /* opcional: limita ancho en pantallas grandes */
+  margin: 0 auto;
+  padding: 0 2rem;
+  height: 60px; /* alto estándar de muchas webs */
+
+  display: flex;
+  justify-content: space-between; /* inicio a la izq., links a la der. */
+  align-items: center;
+}
+
+/* 3) Botón de inicio (izquierda) */
+.navbar .logo,
+.navbar .logo:visited {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #007bff;
+  text-decoration: none;
+}
+
+/* 4) Lista de enlaces (derecha) */
+.navbar .nav-links {
+  display: flex;
+  gap: 1.25rem; /* separación homogénea entre links */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar .nav-links a,
+.navbar .nav-links a:visited {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.navbar .nav-links a:hover {
+  color: #007bff;
+}
+
+/* 5) Compensa el body para que el contenido no quede oculto debajo del header */
+body {
+  padding-top: 60px; /* mismo alto que header */
+  display: flex;
+  flex-direction: column;
+}
+
+/* ========================================================== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+table th,
+table td {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+table .gris {
+  background-color: #f0f0f0;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+.product-container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.product-container h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+table thead {
+  background-color: #f5f5f5;
+}
+
+table th,
+table td {
+  text-align: left;
+  padding: 12px 15px;
+  border-bottom: 1px solid #ddd;
+}
+.form-container
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.actions .btn {
+  text-decoration: none;
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.actions .btn:hover {
+  background-color: #0056b3;
+}
+
+.footer {
+  width: 100%;
+  background-color: rgb(122, 160, 190);
+  position: fixed;
+  bottom: 0;
+  padding: 10px; /* Ejemplo de padding */
+}
+.product-card {
+  width: 300px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 1rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 1rem;
+}
+
+.card-body h3 {
+  margin: 0 0 0.5rem;
+}
+
+.card-body .price {
+  color: green;
+  font-weight: bold;
+}
+
+.card-body .description {
+  font-size: 0.9rem;
+  margin: 0.5rem 0;
+}
+
+.card-body .category {
+  font-size: 0.8rem;
+  color: #666;
+}
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 2rem;
+}
